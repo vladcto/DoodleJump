@@ -5,15 +5,13 @@ using UnityEngine;
 public class LeadPlayer : MonoBehaviour
 {
     [SerializeField]GameObject player;
-    float dist;
+    [SerializeField]float dist;
     // Start is called before the first frame update
     void Start()
-    {
-        dist = this.transform.position.y - player.transform.position.y;
-    }
+    {}
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if (this.transform.position.y - player.transform.position.y < dist)
         {
