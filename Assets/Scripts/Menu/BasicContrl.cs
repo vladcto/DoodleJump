@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartGame : MonoBehaviour
+public class BasicContrl : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -19,5 +19,10 @@ public class StartGame : MonoBehaviour
     public void StaringGame()
     {
         SceneManager.LoadScene("Game",LoadSceneMode.Single);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
